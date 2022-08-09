@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 usd-core = "*"
+ipython = "*"
+ptpython = "*"
 
 [dev-packages]
 
