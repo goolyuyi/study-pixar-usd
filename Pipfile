@@ -6,9 +6,12 @@ name = "pypi"
 [packages]
 usd-core = "*"
 ipython = "*"
-ptpython = "*"
+ptipython = "*"
+notebook = "*"
+jupyter = "*"
 
 [dev-packages]
+ipykernel = "*"
 
 [requires]
 python_version = "3.9"
