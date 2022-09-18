@@ -3,7 +3,7 @@ project(play-usd)
 
 set(CMAKE_CXX_STANDARD 23)
 
-set(pxr_ROOT ~/dev/CLionProjects/USD/local-build-USD)
+set(pxr_ROOT ~/dev/CLionProjects/USD/local-build)
 find_package(pxr REQUIRED)
 list(APPEND CMAKE_MODULE_PATH ~/dev/CLionProjects/cmake/yi-cmake/utils)
 include(CMakePrintHelpers)

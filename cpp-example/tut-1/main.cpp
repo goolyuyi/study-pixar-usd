@@ -15,8 +15,16 @@ int main() {
     auto spherePrim = UsdGeomSphere::Define(stage, SdfPath("/hello/world"));
 
     auto genericPrim = spherePrim.GetPrim();
+    for (auto i: genericPrim.GetProperties()) {
+        cout << i.GetName() << ' ';
+    }
+    cout << endl;
+    for (auto i: genericPrim.GetRelationships()) {
+        cout << i.GetName() << ' ';
+    }
+    cout << endl;
     for (auto i: genericPrim.GetAttributes()) {
-        cout << i.GetDescription() << endl;
+        cout << i.GetName() << ' ';
     }
 
     stage->GetRootLayer()->Save();
