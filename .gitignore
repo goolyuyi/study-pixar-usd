@@ -2,4 +2,9 @@
 .idea
 *.usda
 
-cmake-build*
+cpp-example/cmake-build*
+cpp-example/.vscode
+cpp-example/.idea
+cpp-example/local*
+
+local*
