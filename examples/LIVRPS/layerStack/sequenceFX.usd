@@ -1,0 +1,13 @@
+#usda 1.0
+
+over "World"
+{
+    over "Props"
+    {
+        over "Prop_145" (
+            prepend references = @sequenceFX/turbulence.usd@
+        )
+        {
+        }
+    }
+}

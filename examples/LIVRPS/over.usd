@@ -1,0 +1,12 @@
+#usda 1.0
+
+over "World"
+{
+    over "Props"
+    {
+        over "LuxoBall"
+        {
+            double radius = 10
+        }
+    }
+}
