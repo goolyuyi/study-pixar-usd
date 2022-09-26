@@ -3,9 +3,6 @@
 .vs
 .ipynb_checkpoints
 
-
-*.usda
-
 examples-cpp/cmake-build*
 examples-cpp/.vscode
 examples-cpp/.idea
