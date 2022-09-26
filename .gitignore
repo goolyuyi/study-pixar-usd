@@ -1,5 +1,9 @@
 # created by virtualenv automatically
 .idea
+.vs
+.ipynb_checkpoints
+
+
 *.usda
 
 examples-cpp/cmake-build*
