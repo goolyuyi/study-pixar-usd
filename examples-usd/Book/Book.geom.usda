@@ -72,6 +72,7 @@ def Xform "Book" (
             uniform token[] xformOpOrder = ["xformOp:translate:pivot", "!invert!xformOp:translate:pivot"]
         }
     }
+
     variantSet "shadingVariant" = {
         "BookBlue" {
             over "Geom"

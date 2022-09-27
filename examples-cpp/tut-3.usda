@@ -1,0 +1,23 @@
+#usda 1.0
+
+def Xform "tut3"
+{
+    def Sphere "sphere"
+    (
+
+    )
+    {
+        rel cube_rels= [</tut3/cube>,</tut3/cube2>]
+    }
+
+    def Cube "cube"
+    {
+        double size.connect = </tut3/cube2/size>
+    }
+
+    def Cube "cube2"
+    {
+        double size = 2.0
+    }
+
+}

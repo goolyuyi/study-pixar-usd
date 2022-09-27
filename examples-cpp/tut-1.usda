@@ -1,0 +1,36 @@
+#usda 1.0
+(
+    defaultPrim = "sphere"
+)
+
+def Xform "hello"
+{
+    float3 xformOp:scale = (0.5, 0.5, 0.5)
+    double3 xformOp:translate = (1, 0, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+
+    def Sphere "sphere"
+    {
+    }
+
+    def Cube "cube" (
+        customData = {
+            string bar = "baz"
+            int foo = 5
+        }
+    )
+    {
+        color3f[] primvars:displayColor = [(3, 2, 1)]
+        double size = 2
+    }
+
+    def cube "cube2"
+    {
+    }
+
+    def Mesh "mesh"
+    {
+        uniform token subdivisionScheme = "bilinear"
+    }
+}
+

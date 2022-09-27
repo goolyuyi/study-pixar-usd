@@ -11,8 +11,11 @@ if ($ENV{YI_WORKING_ON} AND $ENV{YI_WORKING_ON} STREQUAL "workstation")
     find_package(HoudiniUSD)
 else ()
     set(CMAKE_CXX_STANDARD 23)
+    message("working on: mac")
+
     set(pxr_ROOT ~/dev/CLionProjects/USD/local-build)
     find_package(pxr REQUIRED)
+    #    find_package(HoudiniUSD)
 endif ()
 
 set(TUT_1_TARGET ${PROJECT_NAME}-tut-1)
@@ -21,17 +24,17 @@ set_target_properties(TUT_1_TARGET PROPERTIES RUNTIME_OUTPUT_DIRECTORY tut-1)
 target_link_libraries(TUT_1_TARGET PRIVATE arch;tf;gf;js;trace;work;plug;vt;ar;kind;sdf;ndr;sdr;pcp;usd;usdGeom;)
 
 set(TUT_2_TARGET ${PROJECT_NAME}-tut-2)
-add_executable(TUT_2_TARGET tut-2-redux/main.cpp)
+add_executable(TUT_2_TARGET tut-2/main.cpp)
 set_target_properties(TUT_2_TARGET PROPERTIES RUNTIME_OUTPUT_DIRECTORY tut-2)
 target_link_libraries(TUT_2_TARGET PRIVATE usd usdGeom)
 
 set(TUT_3_TARGET ${PROJECT_NAME}-tut-3)
-add_executable(TUT_3_TARGET tut-3/tut-3-internal.cpp)
+add_executable(TUT_3_TARGET tut-3/tut-3.cpp)
 set_target_properties(TUT_3_TARGET PROPERTIES RUNTIME_OUTPUT_DIRECTORY tut-3)
 target_link_libraries(TUT_3_TARGET PRIVATE usd usdGeom)
 
 include(CMakePrintHelpers)
 cmake_print_properties(DIRECTORIES . PROPERTIES IMPORTED_TARGETS BUILDSYSTEM_TARGETS)
 
-include(list_all_properties)
+include(utils/list_all_properties)
 print_target_properties(tf)

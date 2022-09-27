@@ -1,6 +1,6 @@
 from pxr import Sdf, Usd
 
-stage = Usd.Stage.CreateNew("nestedVariants.usda")
+stage = Usd.Stage.CreateNew("./usd/nestedVariants.usda")
 prim = stage.DefinePrim("/Employee")
 title = prim.CreateAttribute("title", Sdf.ValueTypeNames.String)
 variantSets = prim.GetVariantSets()
