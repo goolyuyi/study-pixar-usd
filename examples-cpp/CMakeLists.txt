@@ -29,9 +29,14 @@ set_target_properties(TUT_2_TARGET PROPERTIES RUNTIME_OUTPUT_DIRECTORY tut-2)
 target_link_libraries(TUT_2_TARGET PRIVATE usd usdGeom)
 
 set(TUT_3_TARGET ${PROJECT_NAME}-tut-3)
-add_executable(TUT_3_TARGET tut-3/tut-3.cpp)
+add_executable(TUT_3_TARGET tut-3/main.cpp)
 set_target_properties(TUT_3_TARGET PROPERTIES RUNTIME_OUTPUT_DIRECTORY tut-3)
 target_link_libraries(TUT_3_TARGET PRIVATE usd usdGeom)
+
+set(TUT_4_TARGET ${PROJECT_NAME}-tut-4)
+add_executable(TUT_4_TARGET tut-4/main.cpp)
+set_target_properties(TUT_4_TARGET PROPERTIES RUNTIME_OUTPUT_DIRECTORY tut-4)
+target_link_libraries(TUT_4_TARGET PRIVATE usd usdGeom)
 
 include(CMakePrintHelpers)
 cmake_print_properties(DIRECTORIES . PROPERTIES IMPORTED_TARGETS BUILDSYSTEM_TARGETS)

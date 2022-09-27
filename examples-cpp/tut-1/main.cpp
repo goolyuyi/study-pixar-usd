@@ -59,7 +59,7 @@ int main() {
     cube_geomSchema.CreateSizeAttr(VtValue{2.0});
 
     cout << "=========Schema=============" << endl;
-    
+
 
     //Transvers
     cout << "=========Transvers=============" << endl;

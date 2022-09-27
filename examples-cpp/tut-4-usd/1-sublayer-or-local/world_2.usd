@@ -1,0 +1,12 @@
+#usda 1.0
+
+def "World2"
+{
+    def Cube "cube"{
+
+    }
+}
+
+def "Code"{
+    string attr="Code_World2"
+}

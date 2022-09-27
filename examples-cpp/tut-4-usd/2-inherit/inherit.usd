@@ -1,6 +1,11 @@
 #usda 1.0
 
 # A new prim, of the same name as the original inherits target, providing new overrides
+(
+    subLayers = [
+        @Trees.usd@
+    ]
+)
 
 class "_class_Tree"
 {

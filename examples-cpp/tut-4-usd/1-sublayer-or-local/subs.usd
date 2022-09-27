@@ -1,0 +1,11 @@
+#usda 1.0
+(
+    subLayers = [
+        @world_1.usd@,
+        @world_2.usd@,
+    ]
+)
+
+def "Code"{
+    string attr="Code0"
+}

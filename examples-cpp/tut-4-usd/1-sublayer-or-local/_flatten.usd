@@ -1,0 +1,26 @@
+#usda 1.0
+# `usdcat -f subs.usd`
+(
+    doc = """Generated from Composed Stage of root layer /Users/goolyuyi/dev/pythonProjects/study-pixar-usd/examples-cpp/tut-4-usd/1-sublayer-or-local/subs.usd
+"""
+)
+
+def "World2"
+{
+    def Cube "cube"
+    {
+    }
+}
+
+def "Code"
+{
+    string attr = "Code0"
+}
+
+def "World1"
+{
+    def Cube "cube"
+    {
+    }
+}
+
