@@ -20,7 +20,7 @@ def Xform "Robot"
         }
 
         def Material "CorrodedMetal" (
-            specializes = </Robot/Materials/Metal>
+            inherits = </Robot/Materials/Metal>
         )
         {
             # specialize roughness...

@@ -27,10 +27,5 @@ def Xform "hello"
     def cube "cube2"
     {
     }
-
-    def Mesh "mesh"
-    {
-        uniform token subdivisionScheme = "bilinear"
-    }
 }
 
